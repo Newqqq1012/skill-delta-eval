@@ -6,7 +6,7 @@ This package contains the complete analysis pipeline for the paper
 It reproduces, from public data alone:
 
 - the first measurement on 1,014 paired SkillsBench trajectories
-  (Section "A First Measurement on Public Paired Traces", Table 3, Figure 2);
+  (Section "A First Measurement on Public Paired Traces", Table 2, Figure 2);
 - the null-band construction, qualification, and adoption logic;
 - the post-hoc multiplicity accounting and sensitivity analyses;
 - the task-level reanalysis (171 task units, 855 implicit tests).
@@ -28,7 +28,7 @@ analysis/                     core pipeline (pure Python 3 stdlib; no dependenci
   download_skillsbench_runs.py      fetches the public SkillsBench per-run archive
   runs_gemini-3.5-flash.jsonl       518 runs (261 skill / 257 baseline)
   runs_minimax-MiniMax-M3.jsonl     496 runs (247 skill / 249 baseline)
-  results_gemini/ results_minimax/  driver outputs behind Table 3 (results.json,
+  results_gemini/ results_minimax/  driver outputs behind Table 2 (results.json,
                                     report.md — machine- and human-readable)
   multiplicity_report.json          full multiplicity + sensitivity output
   task_level_report.json            full task-level output
@@ -42,7 +42,7 @@ figures/
 
 ```bash
 cd analysis
-# 1. unit-level analysis (Table 3, Figure 2 data)
+# 1. unit-level analysis (Table 2, Figure 2 data)
 python3 run_first_measurement.py runs_gemini-3.5-flash.jsonl --out results_gemini/
 python3 run_first_measurement.py runs_minimax-MiniMax-M3.jsonl --out results_minimax/
 
@@ -56,7 +56,7 @@ python3 task_level_analysis.py
 cd ../figures && python3 make_figure2_pilot.py
 ```
 
-All bootstrap seeds are fixed in-code; every number in the paper's Table 3,
+All bootstrap seeds are fixed in-code; every number in the paper's Table 2,
 the multiplicity paragraph, and the task-level paragraph is reproduced
 deterministically by these runs.
 
