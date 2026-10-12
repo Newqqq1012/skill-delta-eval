@@ -1,0 +1,473 @@
+{
+  "source": "runs_gemini-3.5-flash.jsonl",
+  "driver": "v1.1 (pre-results)",
+  "skills": {
+    "gemini-3.5-flash__cybersecurity": {
+      "status": "ok",
+      "delta_out": {
+        "delta": 0.05523809523809525,
+        "ci": [
+          -0.3333333333333333,
+          0.45238095238095244
+        ],
+        "n_tasks": 7
+      },
+      "equal_outcome": true,
+      "out_status": "equal_outcome",
+      "deltas": {
+        "traj": 0.46430601395777993,
+        "tool": 0.6830609914791549,
+        "tool_jsd": 0.014438792024632784,
+        "eff": {
+          "tokens": -0.18586331594142036,
+          "steps": -0.09967685806611984,
+          "failed_actions": 0.023809523809523725
+        },
+        "saf": 0.0,
+        "saf_by_stratum": {
+          "benign": 0.0,
+          "adversarial": 0.0
+        },
+        "delta_ece": null,
+        "saf_direction": {
+          "worse_types_increased": [],
+          "caution_types_increased": []
+        }
+      },
+      "z": {
+        "traj": 0.785637547723273,
+        "tool": 0.7742902972504301,
+        "eff_tokens": -0.13630247306701207,
+        "eff_steps": -0.07899608747365724,
+        "eff_failed_actions": 0.023809523809523725,
+        "saf": null
+      },
+      "qualified": {
+        "traj": "within_band",
+        "tool": "within_band",
+        "eff_tokens": "within_band",
+        "eff_steps": "within_band",
+        "eff_failed_actions": "within_band",
+        "saf": "within_band"
+      },
+      "adoption": "indifferent",
+      "cosmetic_churn_flag": false
+    },
+    "gemini-3.5-flash__finance-economics": {
+      "status": "ok",
+      "delta_out": {
+        "delta": 0.2222222222222222,
+        "ci": [
+          0.037037037037037035,
+          0.42592592592592593
+        ],
+        "n_tasks": 9
+      },
+      "equal_outcome": false,
+      "out_status": "better",
+      "deltas": {
+        "traj": 0.2959526938342105,
+        "tool": 0.4189498198274916,
+        "tool_jsd": 0.005157683620079286,
+        "eff": {
+          "tokens": 0.01609733075546567,
+          "steps": 0.06311637080867848,
+          "failed_actions": 0.7777777777777778
+        },
+        "saf": 0.0,
+        "saf_by_stratum": {
+          "benign": 0.0,
+          "adversarial": 0.0
+        },
+        "delta_ece": null,
+        "saf_direction": {
+          "worse_types_increased": [],
+          "caution_types_increased": []
+        }
+      },
+      "z": {
+        "traj": 0.5007722097847916,
+        "tool": 0.47490456134054027,
+        "eff_tokens": 0.011804943760064916,
+        "eff_steps": 0.05002110265268157,
+        "eff_failed_actions": 0.7777777777777778,
+        "saf": null
+      },
+      "qualified": {
+        "traj": "within_band",
+        "tool": "within_band",
+        "eff_tokens": "within_band",
+        "eff_steps": "within_band",
+        "eff_failed_actions": "within_band",
+        "saf": "within_band"
+      },
+      "adoption": "adopt",
+      "cosmetic_churn_flag": false
+    },
+    "gemini-3.5-flash__industrial-physical-systems": {
+      "status": "ok",
+      "delta_out": {
+        "delta": 0.06666665476190475,
+        "ci": [
+          -0.12380953571428571,
+          0.26428569047619044
+        ],
+        "n_tasks": 14
+      },
+      "equal_outcome": true,
+      "out_status": "equal_outcome",
+      "deltas": {
+        "traj": 0.40656415853955563,
+        "tool": 0.5505833648196907,
+        "tool_jsd": 0.03501748715692395,
+        "eff": {
+          "tokens": -0.003242487281907389,
+          "steps": 0.11433597185576086,
+          "failed_actions": 1.4242424242424243
+        },
+        "saf": 0.0,
+        "saf_by_stratum": {
+          "benign": 0.0,
+          "adversarial": 0.0
+        },
+        "delta_ece": null,
+        "saf_direction": {
+          "worse_types_increased": [],
+          "caution_types_increased": []
+        }
+      },
+      "z": {
+        "traj": 0.6879343771244735,
+        "tool": 0.624119020885985,
+        "eff_tokens": -0.0023778712500298117,
+        "eff_steps": 0.09061375538253755,
+        "eff_failed_actions": 1.4242424242424243,
+        "saf": null
+      },
+      "qualified": {
+        "traj": "within_band",
+        "tool": "within_band",
+        "eff_tokens": "within_band",
+        "eff_steps": "within_band",
+        "eff_failed_actions": "qualified",
+        "saf": "within_band"
+      },
+      "adoption": "reject",
+      "cosmetic_churn_flag": false
+    },
+    "gemini-3.5-flash__mathematics-or-formal-reasoning": {
+      "status": "ok",
+      "delta_out": {
+        "delta": 0.01904761904761909,
+        "ci": [
+          -0.23809523809523808,
+          0.280952380952381
+        ],
+        "n_tasks": 7
+      },
+      "equal_outcome": true,
+      "out_status": "equal_outcome",
+      "deltas": {
+        "traj": 0.38956536603628933,
+        "tool": 0.634736333102053,
+        "tool_jsd": 0.01189847075408441,
+        "eff": {
+          "tokens": 0.10795861296660282,
+          "steps": 0.04436044490789022,
+          "failed_actions": 0.18650793650793657
+        },
+        "saf": 0.0,
+        "saf_by_stratum": {
+          "benign": 0.0,
+          "adversarial": 0.0
+        },
+        "delta_ece": null,
+        "saf_direction": {
+          "worse_types_increased": [],
+          "caution_types_increased": []
+        }
+      },
+      "z": {
+        "traj": 0.6591712569945299,
+        "tool": 0.7195114201573242,
+        "eff_tokens": 0.07917122247442407,
+        "eff_steps": 0.03515662165022797,
+        "eff_failed_actions": 0.18650793650793657,
+        "saf": null
+      },
+      "qualified": {
+        "traj": "within_band",
+        "tool": "within_band",
+        "eff_tokens": "within_band",
+        "eff_steps": "within_band",
+        "eff_failed_actions": "within_band",
+        "saf": "within_band"
+      },
+      "adoption": "indifferent",
+      "cosmetic_churn_flag": false
+    },
+    "gemini-3.5-flash__media-content-production": {
+      "status": "ok",
+      "delta_out": {
+        "delta": 0.16666666666666663,
+        "ci": [
+          0.0,
+          0.4
+        ],
+        "n_tasks": 5
+      },
+      "equal_outcome": true,
+      "out_status": "equal_outcome",
+      "deltas": {
+        "traj": 0.41589808229865755,
+        "tool": 0.6661712089440874,
+        "tool_jsd": 0.01869875257995145,
+        "eff": {
+          "tokens": -0.43211146813722756,
+          "steps": -0.19241982507288624,
+          "failed_actions": -0.6666666666666667
+        },
+        "saf": 0.0,
+        "saf_by_stratum": {
+          "benign": 0.0,
+          "adversarial": 0.0
+        },
+        "delta_ece": null,
+        "saf_direction": {
+          "worse_types_increased": [],
+          "caution_types_increased": []
+        }
+      },
+      "z": {
+        "traj": 0.7037280148381638,
+        "tool": 0.7551447232786925,
+        "eff_tokens": -0.3168880391991106,
+        "eff_steps": -0.1524969148108629,
+        "eff_failed_actions": -0.6666666666666667,
+        "saf": null
+      },
+      "qualified": {
+        "traj": "within_band",
+        "tool": "within_band",
+        "eff_tokens": "within_band",
+        "eff_steps": "within_band",
+        "eff_failed_actions": "within_band",
+        "saf": "within_band"
+      },
+      "adoption": "indifferent",
+      "cosmetic_churn_flag": false
+    },
+    "gemini-3.5-flash__natural-science": {
+      "status": "ok",
+      "delta_out": {
+        "delta": 0.13340476190476197,
+        "ci": [
+          -0.04719047619047623,
+          0.3382380952380952
+        ],
+        "n_tasks": 14
+      },
+      "equal_outcome": true,
+      "out_status": "equal_outcome",
+      "deltas": {
+        "traj": 0.4147329866899215,
+        "tool": 0.5854705459088813,
+        "tool_jsd": 0.017221636700408965,
+        "eff": {
+          "tokens": -0.09873164511623841,
+          "steps": -0.0581603894440175,
+          "failed_actions": -0.09090909090909087
+        },
+        "saf": 0.0,
+        "saf_by_stratum": {
+          "benign": 0.0,
+          "adversarial": 0.0
+        },
+        "delta_ece": null,
+        "saf_direction": {
+          "worse_types_increased": [],
+          "caution_types_increased": []
+        }
+      },
+      "z": {
+        "traj": 0.7017565933415778,
+        "tool": 0.6636657175247189,
+        "eff_tokens": -0.07240464494650099,
+        "eff_steps": -0.046093379157014475,
+        "eff_failed_actions": -0.09090909090909087,
+        "saf": null
+      },
+      "qualified": {
+        "traj": "within_band",
+        "tool": "within_band",
+        "eff_tokens": "within_band",
+        "eff_steps": "within_band",
+        "eff_failed_actions": "within_band",
+        "saf": "within_band"
+      },
+      "adoption": "indifferent",
+      "cosmetic_churn_flag": false
+    },
+    "gemini-3.5-flash__office-white-collar": {
+      "status": "ok",
+      "delta_out": {
+        "delta": 0.011904761904761973,
+        "ci": [
+          -0.1428571428571429,
+          0.16666666666666666
+        ],
+        "n_tasks": 14
+      },
+      "equal_outcome": true,
+      "out_status": "equal_outcome",
+      "deltas": {
+        "traj": 0.35373560859260283,
+        "tool": 0.4752484501871224,
+        "tool_jsd": 0.010288427227792097,
+        "eff": {
+          "tokens": -0.00042830600050463105,
+          "steps": 0.015488215488215586,
+          "failed_actions": 0.911111111111111
+        },
+        "saf": 0.0,
+        "saf_by_stratum": {
+          "benign": 0.0,
+          "adversarial": 0.0
+        },
+        "delta_ece": null,
+        "saf_direction": {
+          "worse_types_increased": [],
+          "caution_types_increased": []
+        }
+      },
+      "z": {
+        "traj": 0.5985448555968147,
+        "tool": 0.5387224103755938,
+        "eff_tokens": -0.0003140973074892403,
+        "eff_steps": 0.012274749116854456,
+        "eff_failed_actions": 0.911111111111111,
+        "saf": null
+      },
+      "qualified": {
+        "traj": "within_band",
+        "tool": "within_band",
+        "eff_tokens": "within_band",
+        "eff_steps": "within_band",
+        "eff_failed_actions": "within_band",
+        "saf": "within_band"
+      },
+      "adoption": "indifferent",
+      "cosmetic_churn_flag": false
+    },
+    "gemini-3.5-flash__software-engineering": {
+      "status": "ok",
+      "delta_out": {
+        "delta": 0.03490625000000003,
+        "ci": [
+          -0.07082291666666674,
+          0.18437500000000007
+        ],
+        "n_tasks": 16
+      },
+      "equal_outcome": true,
+      "out_status": "equal_outcome",
+      "deltas": {
+        "traj": 0.4316971341300416,
+        "tool": 0.592393949205375,
+        "tool_jsd": 0.008151111991212726,
+        "eff": {
+          "tokens": 0.2121879406675971,
+          "steps": 0.062346185397867106,
+          "failed_actions": 0.24761904761904754
+        },
+        "saf": 0.0,
+        "saf_by_stratum": {
+          "benign": 0.0,
+          "adversarial": 0.0
+        },
+        "delta_ece": null,
+        "saf_direction": {
+          "worse_types_increased": [],
+          "caution_types_increased": []
+        }
+      },
+      "z": {
+        "traj": 0.7304610916539428,
+        "tool": 0.6715138073194797,
+        "eff_tokens": 0.15560758141808545,
+        "eff_steps": 0.0494107138897951,
+        "eff_failed_actions": 0.24761904761904754,
+        "saf": null
+      },
+      "qualified": {
+        "traj": "within_band",
+        "tool": "within_band",
+        "eff_tokens": "within_band",
+        "eff_steps": "within_band",
+        "eff_failed_actions": "within_band",
+        "saf": "within_band"
+      },
+      "adoption": "indifferent",
+      "cosmetic_churn_flag": false
+    }
+  },
+  "bands": {
+    "traj": {
+      "band": 0.5909926470588236,
+      "ci": [
+        0.5262725779967159,
+        0.6470588235294118
+      ],
+      "n": 171
+    },
+    "tool": {
+      "band": 0.8821768707482993,
+      "ci": [
+        0.7931216931216931,
+        0.9365079365079365
+      ],
+      "n": 171
+    },
+    "eff_tokens": {
+      "band": 1.3636092710514658,
+      "ci": [
+        0.9934942125314833,
+        2.0929270132801108
+      ],
+      "n": 171
+    },
+    "eff_steps": {
+      "band": 1.261794871794872,
+      "ci": [
+        0.7868852459016393,
+        1.4166666666666667
+      ],
+      "n": 171
+    },
+    "eff_failed_actions": {
+      "band": 1.0,
+      "ci": [
+        0.17499999999999893,
+        1.5
+      ],
+      "n": 34
+    },
+    "saf": {
+      "band": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n": 171
+    }
+  },
+  "aggregate": {
+    "n_skills": 8,
+    "n_equal_outcome": 7,
+    "n_equal_outcome_qualified_delta": 1,
+    "frequency": 0.125,
+    "adoption_recommendation_changed": 2,
+    "cosmetic_churn_flagged": 0,
+    "note": "negative results reported as-is; no directional filtering"
+  }
+}

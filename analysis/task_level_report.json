@@ -1,0 +1,397 @@
+{
+  "per_config": {
+    "gemini-3.5-flash": {
+      "n_tasks": 86,
+      "qualifications": 10,
+      "detail": [
+        {
+          "task": "dapt-intrusion-detection",
+          "qual": [
+            [
+              "traj",
+              1.07,
+              0.63
+            ]
+          ]
+        },
+        {
+          "task": "drone-planning-control",
+          "qual": [
+            [
+              "traj",
+              1.09,
+              0.644
+            ],
+            [
+              "eff_tokens",
+              1.25,
+              1.7
+            ],
+            [
+              "eff_failed_actions",
+              5.67,
+              5.667
+            ]
+          ]
+        },
+        {
+          "task": "flood-risk-analysis",
+          "qual": [
+            [
+              "traj",
+              1.15,
+              0.678
+            ]
+          ]
+        },
+        {
+          "task": "llm-prefix-cache-replay",
+          "qual": [
+            [
+              "traj",
+              1.36,
+              0.804
+            ]
+          ]
+        },
+        {
+          "task": "react-performance-debugging",
+          "qual": [
+            [
+              "eff_failed_actions",
+              1.67,
+              1.667
+            ]
+          ]
+        },
+        {
+          "task": "sec-financial-report",
+          "qual": [
+            [
+              "eff_tokens",
+              1.02,
+              1.389
+            ],
+            [
+              "eff_steps",
+              1.04,
+              1.318
+            ]
+          ]
+        },
+        {
+          "task": "simpo-code-reproduction",
+          "qual": [
+            [
+              "eff_failed_actions",
+              8.33,
+              8.333
+            ]
+          ]
+        }
+      ]
+    },
+    "minimax-MiniMax-M3": {
+      "n_tasks": 85,
+      "qualifications": 13,
+      "detail": [
+        {
+          "task": "energy-unit-commitment",
+          "qual": [
+            [
+              "eff_failed_actions",
+              7.93,
+              8.0
+            ]
+          ]
+        },
+        {
+          "task": "enterprise-information-search",
+          "qual": [
+            [
+              "tool",
+              1.01,
+              0.89
+            ]
+          ]
+        },
+        {
+          "task": "fix-erlang-ssh-cve",
+          "qual": [
+            [
+              "eff_failed_actions",
+              4.3,
+              4.333
+            ]
+          ]
+        },
+        {
+          "task": "flood-risk-analysis",
+          "qual": [
+            [
+              "traj",
+              1.16,
+              0.79
+            ],
+            [
+              "tool",
+              1.0,
+              0.884
+            ]
+          ]
+        },
+        {
+          "task": "glm-lake-mendota",
+          "qual": [
+            [
+              "traj",
+              1.1,
+              0.748
+            ]
+          ]
+        },
+        {
+          "task": "latex-formula-extraction",
+          "qual": [
+            [
+              "tool",
+              1.08,
+              0.952
+            ]
+          ]
+        },
+        {
+          "task": "quantum-numerical-simulation",
+          "qual": [
+            [
+              "eff_failed_actions",
+              1.21,
+              1.222
+            ]
+          ]
+        },
+        {
+          "task": "react-performance-debugging",
+          "qual": [
+            [
+              "eff_failed_actions",
+              1.92,
+              1.933
+            ]
+          ]
+        },
+        {
+          "task": "shock-analysis-demand",
+          "qual": [
+            [
+              "eff_steps",
+              1.02,
+              1.117
+            ]
+          ]
+        },
+        {
+          "task": "simpo-code-reproduction",
+          "qual": [
+            [
+              "eff_failed_actions",
+              1.21,
+              1.222
+            ]
+          ]
+        },
+        {
+          "task": "syzkaller-ppdev-syzlang",
+          "qual": [
+            [
+              "eff_failed_actions",
+              2.98,
+              3.0
+            ]
+          ]
+        },
+        {
+          "task": "video-silence-remover",
+          "qual": [
+            [
+              "tool",
+              1.05,
+              0.924
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "summary": {
+    "n_task_units": 171,
+    "n_tests": 855,
+    "n_qualifications": 23,
+    "observed_rate": 0.026900584795321637,
+    "chance_rate": 0.05,
+    "expected_by_chance": 42.8,
+    "detail": [
+      {
+        "config": "gemini-3.5-flash",
+        "task": "dapt-intrusion-detection",
+        "dim": "traj",
+        "z": 1.07,
+        "delta": 0.63
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "drone-planning-control",
+        "dim": "traj",
+        "z": 1.09,
+        "delta": 0.644
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "drone-planning-control",
+        "dim": "eff_tokens",
+        "z": 1.25,
+        "delta": 1.7
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "drone-planning-control",
+        "dim": "eff_failed_actions",
+        "z": 5.67,
+        "delta": 5.667
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "flood-risk-analysis",
+        "dim": "traj",
+        "z": 1.15,
+        "delta": 0.678
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "llm-prefix-cache-replay",
+        "dim": "traj",
+        "z": 1.36,
+        "delta": 0.804
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "react-performance-debugging",
+        "dim": "eff_failed_actions",
+        "z": 1.67,
+        "delta": 1.667
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "sec-financial-report",
+        "dim": "eff_tokens",
+        "z": 1.02,
+        "delta": 1.389
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "sec-financial-report",
+        "dim": "eff_steps",
+        "z": 1.04,
+        "delta": 1.318
+      },
+      {
+        "config": "gemini-3.5-flash",
+        "task": "simpo-code-reproduction",
+        "dim": "eff_failed_actions",
+        "z": 8.33,
+        "delta": 8.333
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "energy-unit-commitment",
+        "dim": "eff_failed_actions",
+        "z": 7.93,
+        "delta": 8.0
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "enterprise-information-search",
+        "dim": "tool",
+        "z": 1.01,
+        "delta": 0.89
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "fix-erlang-ssh-cve",
+        "dim": "eff_failed_actions",
+        "z": 4.3,
+        "delta": 4.333
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "flood-risk-analysis",
+        "dim": "traj",
+        "z": 1.16,
+        "delta": 0.79
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "flood-risk-analysis",
+        "dim": "tool",
+        "z": 1.0,
+        "delta": 0.884
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "glm-lake-mendota",
+        "dim": "traj",
+        "z": 1.1,
+        "delta": 0.748
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "latex-formula-extraction",
+        "dim": "tool",
+        "z": 1.08,
+        "delta": 0.952
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "quantum-numerical-simulation",
+        "dim": "eff_failed_actions",
+        "z": 1.21,
+        "delta": 1.222
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "react-performance-debugging",
+        "dim": "eff_failed_actions",
+        "z": 1.92,
+        "delta": 1.933
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "shock-analysis-demand",
+        "dim": "eff_steps",
+        "z": 1.02,
+        "delta": 1.117
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "simpo-code-reproduction",
+        "dim": "eff_failed_actions",
+        "z": 1.21,
+        "delta": 1.222
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "syzkaller-ppdev-syzlang",
+        "dim": "eff_failed_actions",
+        "z": 2.98,
+        "delta": 3.0
+      },
+      {
+        "config": "minimax-MiniMax-M3",
+        "task": "video-silence-remover",
+        "dim": "tool",
+        "z": 1.05,
+        "delta": 0.924
+      }
+    ]
+  }
+}
